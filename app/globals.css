@@ -4,6 +4,13 @@
     --color-primary: #02B290;
     --color-secondary: #353535;
 }
+
+::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
+::-webkit-scrollbar-thumb{background: #02b290 }
+::-webkit-scrollbar-track{background: #fff }
+
+
+
 .container{width: 96%; margin: auto;}
 
 /* Arrow container */
@@ -60,4 +67,52 @@
 
 .btn-g:hover{color: #fff !important; background: #353535 !important;}
 
+/* Shop by Category*/
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
 
+
+.scroll::-webkit-scrollbar-thumb{background: #ccc !important;}
+.MuiFormControlLabel-label {font-size: 14px !important;}
+.MuiFormControlLabel-root .MuiCheckbox-root.Mui-checked {color: #02b290 !important;}
+
+/* Ratting */
+.MuiCheckbox-root.Mui-checked .MuiSvgIcon-root {fill: #02b290 !important;}
+.ratingFilter .MuiCheckbox-root  {padding-left: 0px !important;}
+
+.ReactCollapse--collapse {
+  transition: height 500ms ease !important;
+}
+
+
+
+/* Slider height (track) */
+.range-slider {
+  height: 4px !important;
+}
+
+/* Green selected range */
+.range-slider__range {
+  background-color: #02b290 !important;
+}
+
+/* Thumb (circle) */
+.range-slider__thumb {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: #02b290 !important;
+  border: none !important;
+}
+
+/* Hover / focus */
+.range-slider__thumb:hover {
+  box-shadow: 0 0 0 4px rgba(2, 178, 144, 0.25);
+}
+
+
+
+.MuiList-root li{font-size: 14px !important;}
+
+.MuiPaginationItem-root.Mui-selected {background-color: #02b290 !important; color: #fff !important;}
