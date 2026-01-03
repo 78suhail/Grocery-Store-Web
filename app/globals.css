@@ -116,3 +116,17 @@ body::-webkit-scrollbar-thumb {
 .MuiList-root li{font-size: 14px !important;}
 
 .MuiPaginationItem-root.Mui-selected {background-color: #02b290 !important; color: #fff !important;}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Firefox*/
+
+input[type=number]{
+  -moz-appearance: textfield;
+}

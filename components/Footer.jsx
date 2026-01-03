@@ -18,7 +18,7 @@ const Footer = () => {
           <div className=" flex items-center justify-center gap-2 py-3 lg:py-8 pb-0 lg:pb-8 px-0 lg:px-5">
             <div className="col flex items-center justify-center flex-col group w-[15%] cursor-pointer">
               <LiaShippingFastSolid className="text-[40px] transition-all duration-300 group-hover:text-primary group-hover:translate-y-1" />
-              <h3 className="text-[16px] font-semibold mt-3">Fast Shipping</h3>
+              <h3 className="text-[16px] font-medium mt-3">Fast Shipping</h3>
               <p className="text-[13px] font-medium text-gray-600">
                 For all orders over $100
               </p>
@@ -26,7 +26,7 @@ const Footer = () => {
 
             <div className="col flex items-center justify-center flex-col group w-[15%] cursor-pointer">
               <PiKeyReturnLight className="text-[40px] transition-all duration-300 group-hover:text-primary group-hover:translate-y-1" />
-              <h3 className="text-[16px] font-semibold mt-3"> Easy Returns</h3>
+              <h3 className="text-[16px] font-medium  mt-3"> Easy Returns</h3>
               <p className="text-[13px] font-medium text-gray-600">
                 For an Exchange Product
               </p>
@@ -34,7 +34,7 @@ const Footer = () => {
 
             <div className="col flex items-center justify-center flex-col group w-[15%] cursor-pointer">
               <BsWallet2 className="text-[40px] transition-all duration-300 group-hover:text-primary group-hover:translate-y-1" />
-              <h3 className="text-[16px] font-semibold mt-3">Secure Payment</h3>
+              <h3 className="text-[16px] font-medium  mt-3">Secure Payment</h3>
               <p className="text-[13px] font-medium text-gray-600">
                 Payment Cards Accepted
               </p>
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <div className="col flex items-center justify-center flex-col group w-[15%] cursor-pointer">
               <LiaGiftSolid className="text-[40px] transition-all duration-300 group-hover:text-primary group-hover:translate-y-1" />
-              <h3 className="text-[16px] font-semibold mt-3">
+              <h3 className="text-[16px] font-medium  mt-3">
                 Special Gift Cards
               </h3>
               <p className="text-[13px] font-medium text-gray-600">
@@ -52,7 +52,7 @@ const Footer = () => {
 
             <div className="col flex items-center justify-center flex-col group w-[15%] cursor-pointer">
               <BiSupport className="text-[40px] transition-all duration-300 group-hover:text-primary group-hover:translate-y-1" />
-              <h3 className="text-[16px] font-semibold mt-3">24/7 Support</h3>
+              <h3 className="text-[16px] font-medium  mt-3">24/7 Support</h3>
               <p className="text-[13px] font-medium text-gray-600">
                 Dedicated Support
               </p>

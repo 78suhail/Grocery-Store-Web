@@ -16,10 +16,10 @@ const PopularProducts = () => {
         <div className="container">
           <div className="flex items-center justify-between mb-5">
             <div className="coll w-[30%]">
-              <h1 className="text-[20px] text-gray-800 font-semibold">
+              <h1 className="text-[20px] text-gray-800 font-medium ">
                 Popular Products
               </h1>
-              <p className="text-[16px] text-gray-800 ">
+              <p className="text-[14px] text-gray-800 ">
                 Do not miss the current offers
               </p>
             </div>

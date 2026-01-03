@@ -1,8 +1,14 @@
 import "./globals.css";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Inter } from "next/font/google"; // ✅ Correct import
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Grocery store App",
@@ -11,15 +17,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body>
-        <Header/>
+      <body className={inter.className}> {/* ✅ font applied */}
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
