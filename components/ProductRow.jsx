@@ -11,7 +11,7 @@ const ProductRow = (props) => {
        <div className='container'>
          <div className="flex items-center justify-between mb-5">
            <h2 className="text-[20px] text-gray-800 font-medium ">{props?.title}</h2>
-           <Link href={"/"} className='flex items-center gap-1 text-[15px] text-gray-700 font-medium hover:text-primary'>
+           <Link href={"#"} className='flex items-center gap-1 text-[15px] text-gray-700 font-medium hover:text-primary'>
            View All <MdOutlineArrowRightAlt size={25} />
    
            </Link>
