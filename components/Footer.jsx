@@ -13,7 +13,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className=" bg-[#FAFAFA] py-8 mt-2 pb-0">
+      <footer className=" bg-[#FAFAFA] py-8 pb-0">
         <div className="container">
           <div className=" flex items-center justify-center gap-2 py-3 lg:py-8 pb-0 lg:pb-8 px-0 lg:px-5">
             <div className="col flex items-center justify-center flex-col group w-[15%] cursor-pointer">
