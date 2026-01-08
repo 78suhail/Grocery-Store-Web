@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { IconButton, TextField, Button } from "@mui/material";
+import { IconButton, TextField} from "@mui/material";
+import { Button } from "@mui/material";
 import Link from "next/link";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
@@ -13,8 +14,17 @@ const Register = () => {
         <div className="container">
           <div className="bg-white p-10 rounded-lg border border-black/10 w-[500px] mb-6 m-auto">
             <h1 className="text-center text-[20px] font-medium">
-              Login to your account
+              Register with new account
             </h1>
+            <div className="my-4 w-full">
+              <TextField
+                id="fullname"
+                label="Full Name"
+                variant="outlined"
+                className="w-full"
+              />
+            </div>
+
             <div className="my-4 w-full">
               <TextField
                 id="emailField"
@@ -29,7 +39,7 @@ const Register = () => {
                 id="password"
                 label="Password"
                 variant="outlined"
-                className="w-full "
+                className="w-full"
                 type={showPassword === true ? "text" : "password"}
               />
 
@@ -47,30 +57,20 @@ const Register = () => {
               </IconButton>
             </div>
 
-            <div className="py-1">
-              <Link
-                href="/forgot-password"
-                className="text-[15px] text-gray-700 font-medium hover:text-primary"
-              >
-                Forgot Password?
-              </Link>
-
-            </div>
-
             <div className="my-4 w-full relative">
               <Button className="w-full btn-g !py-4 text-[16px]">
-                Register
+                Login
               </Button>
             </div>
 
             <div className="text-center text-[15px] text-gray-600 mb-3">
               <span>
-                Not have an account?{" "}
+                Already have an account?{" "}
                 <Link
-                  href="/Register"
+                  href="/login"
                   className="text-primary hover:text-secondary font-semibold"
                 >
-                  Sign Up
+                  Login
                 </Link>
               </span>
             </div>
