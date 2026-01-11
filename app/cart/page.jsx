@@ -3,6 +3,7 @@
 import React from "react";
 import CartItems from "./CartItems";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -58,7 +59,8 @@ const Page = () => {
               </div>
 
               <div className="px-5 flex w-full pb-5">
-                <Button className="btn-g w-full">Next</Button>
+                <Link href="/checkout" className="w-full">
+                <Button className="btn-g w-full">Next</Button> </Link>
               </div>
             </div>
           </div>

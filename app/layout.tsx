@@ -2,7 +2,11 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Inter } from "next/font/google"; // ✅ Correct import
+import { Inter } from "next/font/google";
+import ThemeProvider from "@/context/ThemeProvider"
+
+
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,10 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}> {/* ✅ font applied */}
-        <Header />
-        {children}
-        <Footer />
+      <body className={inter.className}> 
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,16 +1,33 @@
-import React from "react";
+"use client";
+import React,{useContext, useState} from "react";
 import { BsWallet2 } from "react-icons/bs";
 import { LiaGiftSolid, LiaShippingFastSolid } from "react-icons/lia";
 import { PiKeyReturnLight } from "react-icons/pi";
 import { BiSupport } from "react-icons/bi";
 import Link from "next/link";
 import { IoChatboxOutline } from "react-icons/io5";
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import { FaFacebookF, FaInstagram, FaPinterestP } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import Image from "next/image";
+import Drawer from "@mui/material/Drawer";
+import { MyContext } from "@/context/ThemeContext";
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+
 
 const Footer = () => {
+
+  const context = useContext(MyContext);
+
+  const [phone, setPhone] = useState('');
+
+
   return (
     <>
       <footer className=" bg-[#FAFAFA] py-8 pb-0">
@@ -279,6 +296,74 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <Drawer
+       anchor="right" 
+       open={context?.isOpenAdressBox} 
+       onClose={() => context?.isOpenAdressPanel(false)}
+       className="addressPannel"
+       >
+
+      <form className="w-[450px] p-5">
+
+        <h3 className="text-[18px] font-[500] text-gray-700">Add New Address</h3>
+
+        <div className="flex flex-col gap-2 mt-4">
+
+           <div className="form-group w-full">
+          <TextField label="Address Line 1" variant="outlined" className="w-full" size="small"/>
+
+        </div>
+        <div className="form-group w-full">
+          <TextField label="City" variant="outlined" className="w-full" size="small"/>
+
+        </div>
+
+         <div className="form-group w-full">
+          <TextField label="Pincode" type="number" variant="outlined" className="w-full" size="small"/>
+
+        </div>
+        <div className="form-group w-full">
+          <TextField label="Country" type="text" variant="outlined" className="w-full" size="small"/>
+
+        </div>
+        <div className="form-group w-full">
+           <PhoneInput
+        defaultCountry="in"
+        value={phone}
+        onChange={(phone) => setPhone(phone)}
+      />
+
+        </div>
+        <div className="form-group w-full">
+          <TextField label="Landmark" type="text" variant="outlined" className="w-full" size="small"/>
+
+        </div>
+
+        <div className="form-group w-full">
+          <FormControl>
+      <FormLabel id="demo-row-radio-buttons-group-label">Address Type</FormLabel>
+      <RadioGroup
+        row
+        aria-labelledby="demo-row-radio-buttons-group-label"
+        name="row-radio-buttons-group"
+      >
+        <FormControlLabel value="Home" control={<Radio />} label="Home" />
+        <FormControlLabel value="Office" control={<Radio />} label="Office" />
+       
+      </RadioGroup>
+    </FormControl>
+
+        </div>
+        
+        <div className="form-group w-full">
+          <Button className="btn-g w-full"> Save</Button>
+
+        </div>
+         
+        </div>
+       
+      </form>
+      </Drawer>
     </>
   );
 };
