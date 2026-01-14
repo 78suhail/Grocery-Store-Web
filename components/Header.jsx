@@ -37,7 +37,7 @@ const Header = () => {
               </div>
 
               <div className="flex items-center gap-8 ">
-                <Link href={"/wishlist"} className="relative flex group">
+                <Link href={"/my-list"} className="relative flex group">
                   <span className="bg-[#Dc2626] w-5 h-5 rounded-full flex items-center justify-center absolute -top-2 -right-2 text-white text-xs">
                     3
                   </span>
