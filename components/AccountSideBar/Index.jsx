@@ -17,7 +17,7 @@ const menuItems = [
   { label: "Profile", icon: FaUser, href: "/my-account" },
   { label: "Addresses", icon: FaMapMarkerAlt, href: "/address" },
   { label: "MyList", icon: FaHeart, href: "/my-list" },
-  { label: "Orders", icon: FaBox, href: "/orders" },
+  { label: "Orders", icon: FaBox, href: "/my-orders" },
   { label: "Logout", icon: FaSignOutAlt, href: "/logout" },
 ];
 
